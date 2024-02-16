@@ -1,0 +1,175 @@
+#pokecontainer {
+    background-color: #2e3235;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokenav {
+    background-color: brown;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#pokecontainer ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    /* grid-auto-rows: 275px; */
+    gap: 9px;
+    margin: 0px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+
+
+#box-pokemon {
+  background-image: url(../assets/pokebola.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: top 15px right 15px;
+    background-color: #2e3235;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #4C555C;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#box-pokemon h2 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.poketure {
+    /* background-color: antiquewhite; */
+    width: 160px;
+    height: 160px;
+}
+
+.tipo {
+    font-size: smaller;
+    font-weight: 100;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width:fit-content;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.tipobox {
+    font-size: smaller;
+    font-weight: 100;
+    display: inline-block;
+    width:fit-content;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Adicione estilos para os botões de página */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #fff;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  .pagination button {
+    background-color: #ccc;
+    border: 1px solid #666;
+    color: #333;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .pagination button.active {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Adicione estilos para o botão anterior/próximo se desejar */
+  .pagination .prev-next {
+    margin: 0 4px;
+  }
+  
+  .pagination .prev-next button {
+    background-color: #ccc;
+    border: 1px solid #666;
+    color: #333;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão anterior/próximo quando desativado */
+  .pagination .prev-next button:disabled {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+
+  .inputbox {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #9ca3af;
+  }
+  .inputbox span {
+    margin-left: 8px;
+  }
+  .inputbox input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+  }
+  
+ @media (max-width:430px){
+  #pokecontainer ul{
+    /* grid-template-columns: repeat(1,1fr);
+    margin: auto;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  #box-pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+ }
+

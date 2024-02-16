@@ -1,11 +1,4 @@
-.BarraDenav {
-    height: 7vh;
-    color: crimson;
-    background-color: black;
-    display: flex;
-}
-
-.BarraDenav :hover{
+/* .BarraDenav :hover{
     color: aqua;
 }
 
@@ -15,7 +8,40 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
+} */
+
+
+
+.corpo {
+    background-color:#e0dfe0;
+    width: 100%;
 }
+/* 
+nav {
+    background-color: brown;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav h1 {
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media (max-width: 600px){
+    nav {
+        height: 10%;
+    }
+} */
 
 
 

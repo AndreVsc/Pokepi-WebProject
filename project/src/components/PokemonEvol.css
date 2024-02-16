@@ -1,0 +1,13 @@
+.evolucon {
+    display: flex;
+    flex-direction: row;
+}
+
+.evolucon li {
+    width: 80%;
+    text-align: center;
+}
+
+.picevol {
+    height: 120%;
+}

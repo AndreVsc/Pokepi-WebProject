@@ -1,0 +1,119 @@
+#pokekon {
+    width: 100vw;
+}
+
+#pokekon > div{
+    height: 100vh;
+    background-color: #2e3235;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.pokenav {
+    background-color: brown;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 3 / -1;
+}
+
+.pokenav > img {
+    height: 80%;
+}
+
+#apresent {
+    grid-area: 3 / 2 / 11 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#apresent img {
+    height: 82%;
+}
+
+#apresent h2, p {
+    text-transform: capitalize;
+}
+
+#apresent h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+#dados {
+    grid-area: 4 / -7 / -3 / -2;
+    font-size: 1.5rem;
+} 
+
+#dados p {
+    margin: 10px 0px;
+}
+
+#evolute {
+    grid-area: -6 / 2 / -3 / 9;
+    display: flex;
+    flex-direction: column;
+}
+
+#pokemondata {
+    text-transform: uppercase;
+}
+
+
+
+.typebox {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+.stat-bar {
+    display: flex;
+    align-items:center;
+  }
+  
+  .stat-label {
+    margin-right: 8px;
+    width: 80px; /* Largura do rótulo, ajuste conforme necessário */
+  }
+  
+  .stat-fill {
+    height: 20px; /* Altura da barra, ajuste conforme necessário */
+    border-radius: 10px;
+    background-color: #9aff00; /* Cor de fundo da barra, ajuste conforme necessário */
+    margin-left: 50px;
+  }
+  
+
+@media screen and (max-width: 430px) {
+    #pokekon > div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #apresent,
+    #dados,
+    #evolute {
+        grid-area: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #evolute {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}

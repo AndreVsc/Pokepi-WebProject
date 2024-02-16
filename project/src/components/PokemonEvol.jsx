@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import apFetch from "../api/config";
 import { Link } from "react-router-dom";
 
+// css
+import './PokemonEvol.css'
+
 function PokemonEvol({ id }) {
   const [evolution, setEvolution] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -69,11 +72,11 @@ function PokemonEvol({ id }) {
 
   return (
     <div>
-      <ul>
+      <ul className="evolucon">
         {evolutionData.map((data) => (
           <li key={data.id}>
+            <Link to={`/${data.name}`}><img className="picevol" src={data.sprites.front_default} alt={data.name} /></Link>
             <p>{data.name}</p>
-            <Link to={`/${data.name}`}><img src={data.sprites.front_default} alt={data.name} /></Link>
           </li>
         ))}
       </ul>
